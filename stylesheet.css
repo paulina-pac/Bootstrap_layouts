@@ -1,0 +1,33 @@
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+
+.site-header {
+  background: url("https://images.unsplash.com/photo-1519925610903-381054cc2a1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.layout-hero.site-header  {
+  min-height: 60vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.layout-social .layout-icon {
+  font-size: 1.5em; 
+}
+
