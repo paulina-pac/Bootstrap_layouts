@@ -1,33 +1,115 @@
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
-
 .site-header {
-  background: url("https://images.unsplash.com/photo-1519925610903-381054cc2a1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80");
+  background: linear-gradient(180deg, rgb(17, 17, 17) 0%, rgba(0, 0, 0, 0) 100%),
+    url("https://images.unsplash.com/photo-1516737488405-7b6d6868fad3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  /* -webkit-filter: grayscale(100%); Safari 6.0 - 9.0
+    filter: grayscale(100%); */
 }
 
-.layout-hero.site-header  {
+.fas {
+  color: burlywood;
+}
+
+.navbar-brand {
+  color: burlywood;
+}
+
+.site-header .layout-hero {
   min-height: 60vh;
 }
 
+.site-header .page-section-title {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: burlywood;
+}
+
+@media (min-width: 768px) {
+  .site-header .page-section-title {
+    font-size: 5rem;
+  }
+}
+
+.site-header .page-section-text {
+  font-size: 1.2em;
+}
+
+@media (min-width: 1376px) {
+  .container {
+    max-width: 2200px;
+  }
+}
+
+
+.page-section-title {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: burlywood;
+}
+
+  .page-section-text {
+    font-size: 1.2em;
+  }
 
 
 
-
-
-
-
-
-
-
-
-
+/* 
 .layout-social .layout-icon {
   font-size: 1.5em; 
 }
 
+
+
+.layout-multicolumn img {
+
+  position: relative;
+  max-width: 400px;
+  max-height: 200px;
+} */
+
+/* .layout-multicolumn section {
+  position: relative;
+  display: flex;
+  height:300px;
+  overflow: hidden;
+  text-align: center; */
+
+/* .img-container {
+  justify-self: center;
+  width: 400px;
+}  */
+
+.img-fluid {
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  height: 366px;
+}
+
+
+.layout-media .layout-image {
+  max-width: 200px;
+}
+
+.layout-media .layout-title {
+  color: burlywood;
+  font-weight: 700;
+}
+
+
+.layout-photogrid .layout-image {
+ max-width: 100%; 
+
+}
+
+/* #layout-carousel .layout-image {
+  max-width: 100%
+} */

@@ -1,106 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-      user-scalable="yes"
-    />
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Bootstrap Layouts</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+        user-scalable="yes" />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="stylesheet.css" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Bootstrap Layouts</title>
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-      <link
-      href="https://fonts.googleapis.com/css?family=Karla:400,700"
-      rel="stylesheet"
-    />
-  </head>
+  <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous" />
+  <link rel="stylesheet" href="stylesheet.css" />
 
-  <body>
-    <header id="page-hero" class="site-header">
-      <nav class="site-nav navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-        <div
-          class="container-fluid">
-          <a class="navbar-brand" href="#page-hero">
-            <i class="fas fa-laptop-code text-light"></i> Bootstrap Components
-          </a>
-          <button
-            type="button"
-            class="navbar-toggler"
-            data-toggle="collapse"
-            data-target="#my-toggler-nav"
-            aria controls="my-toggler-nav"
-            aria-label="Toggler Navigation">
+  <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous"/>
 
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:300,400,600" rel="stylesheet">
+</head>
 
-<section class="collapse navbar-collapse" id="my-toggler-nav">
-            <div class="navbar-nav ml-auto">
-              <a class="nav-item nav-link" href="#page-hero">Home</a>
-              <a class="nav-item nav-link" href="#page-multicolumn">Columns</a>
-              <a class="nav-item nav-link" href="#page-media">Media</a>
-              <a class="nav-item nav-link" href="#page-photogrid">Grid</a>
-              <a class="nav-item nav-link" href="#page-carousel">Carousel</a>
-              <a class="nav-item nav-link" href="#page-nested">Nested</a>
-              <a class="nav-item nav-link" href="#page-icons">Icons</a>
-              <a class="nav-item nav-link" href="#page-floater">Floater</a>
-              <a class="nav-item nav-link" href="#page-cards">Cards</a>
-            </div>
-            <!-- End of nav links -->
-</section>
+<body class="bg-light">
+  <header id="page-hero" class="site-header mb-4">
+    <nav class="site-nav navbar navbar-expand-sm bg-light navbar-light fixed-top">
+      <div
+           class="container-fluid">
+        <a class="navbar-brand" href="#page-hero" style="color: burlywood">
+          <i class="fas fa-laptop-code "></i> Bootstrap Components
+        </a>
+        <button
+                type="button"
+                class="navbar-toggler"
+                data-toggle="collapse"
+                data-target="#my-toggler-nav"
+                aria controls="my-toggler-nav"
+                aria-label="Toggler Navigation">
+
+          <span class="navbar-toggler-icon" role="complementary"></span>
+        </button>
+
+
+        <section class="collapse navbar-collapse" id="my-toggler-nav">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="#page-hero">Home</a>
+            <a class="nav-item nav-link" href="#page-multicolumn">Columns</a>
+            <a class="nav-item nav-link" href="#page-media">Media</a>
+            <a class="nav-item nav-link" href="#page-photogrid">Grid</a>
+            <a class="nav-item nav-link" href="#page-carousel">Carousel</a>
+            <a class="nav-item nav-link" href="#page-nested">Nested</a>
+            <a class="nav-item nav-link" href="#page-icons">Icons</a>
+            <a class="nav-item nav-link" href="#page-floater">Floater</a>
+            <a class="nav-item nav-link" href="#page-cards">Cards</a>
+          </div>
+          <!-- End of nav links -->
+        </section>
+      </div>
+      <!-- End of nav container -->
+    </nav>
+
+
+    <section class="layout-hero d-flex text-center align-items-center">
+      <div class="container p-3 text-white">
+        <div class="row justify-content-center">
+          <div class="col-7">
+            <h3 class="page-section-title"> Bootstrap 4 Layouts</h3>
+            <p class="page-section-text"> The layout I'm creating at the moment will use multiple columns rules, which are simple,
+              the amount of columns each group will take will depend of the width of your browser it will
+              be extremely interesting so please have a look and enjoy</p>
+          </div>
+          </div->
         </div>
-        <!-- End of nav container -->
-      </nav>
-    
-    
-      <section class="layout-hero site-header text-center">
-       <div class="container p-3">
-          <h3> Bootstrap 4 Layouts</h3>
-          <p> The layout I'm creating at the moment will use multiple columns rules, which are simple,
-            the amount of columns each group will take will depend of the width of your browser it will
-            be extremely interesting so please have a look and enjoy</p>
-       </div>
-      </section>
-      
-      
+    </section>
+
+
+  </header>
+
+
+
+
+  <article id="page-multicolumn" class="page-section text-center py-3">
+
+    <header class="page-section-header container">
+      <h2 class="page-section-title">Multi-column</h2>
+      <p class="page-section-text"> This layout uses multiple column rules so that how many columns each group takes depends on the width
+        of the browser.</p>
     </header>
+
+    <section class="layout-multicolumn container align-items-center">
+      <div class="row row-eq-height">
+        <section class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="img-container" style="background: url('https://images.unsplash.com/photo-1520041400579-108544ee54b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1342&q=80') no-repeat center center/cover; width: 100%; height: 400px;"></div>
+          <!-- <img class="img-fluid" src="https://images.unsplash.com/photo-1520041400579-108544ee54b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1342&q=80" alt="Monster Image 01"> -->
+          <h5 class="pt-2">Mingle</h5>
+        </section>
+  
+        <section class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="img-container" style="background: url('https://images.unsplash.com/photo-1521079420308-efd8888d800a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover; width: 100%; height: 400px;"></div>
+          <!-- <img class="img-fluid" src="https://images.unsplash.com/photo-1521079420308-efd8888d800a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="Monster Image 02"> -->
+          <h5 class="pt-2">Yodel</h5>
+        </section>
+  
+        <section class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="img-container" style="background: url('https://images.unsplash.com/photo-1519428376293-4733053a9c4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80') no-repeat center center/cover; width: 100%; height: 400px;"></div>
+            <!-- <img class="img-fluid" src="https://images.unsplash.com/photo-1519428376293-4733053a9c4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="Monster Image 03"> -->
+
+          <h5 class="pt-2">Squido</h5>
+        </section>
+  
+        <section class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="img-container" style="background: url('https://images.unsplash.com/photo-1521261282876-407408281112?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover; width: 100%; height: 400px;"></div>
+          <!-- <img class="img-fluid" src="https://images.unsplash.com/photo-1521261282876-407408281112?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="Monster Image 04"> -->
+          <h5 class="pt-2">Spook</h5>
+        </section>
+  
+        <section class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="img-container" style="background: url('https://images.unsplash.com/photo-1474308305481-198184645d10?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover; width: 100%; height: 400px;"></div>
+          <!-- <img class="img-fluid" src="https://images.unsplash.com/photo-1474308305481-198184645d10?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Monster Image 05"> -->
+          <h5 class="pt-2">Melville</h5>
+        </section>
+  
+        <section class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="img-container" style="background: url('https://images.unsplash.com/photo-1462416949377-f91c1b0452f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80') no-repeat center center/cover; width: 100%; height: 400px;"></div>
+          <!-- <img class="img-fluid" src="https://images.unsplash.com/photo-1462416949377-f91c1b0452f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" alt="Monster Image 06"> -->
+          <h5 class="pt-2">Filo</h5>
+        </section>
+  
+        <section class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="img-container" style="background: url('https://images.unsplash.com/photo-1516737488405-7b6d6868fad3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover; width: 100%; height: 400px;"></div>
+          <!-- <img class="img-fluid" src="https://images.unsplash.com/photo-1516737488405-7b6d6868fad3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="Monster Image 07"> -->
+          <h5 class="pt-2">Blade</h5>
+        </section>
+  
+        <section class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="img-container" style="background: url('https://images.unsplash.com/photo-1541261095067-cc0229c9ba68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover; width: 100%; height: 400px;"></div>
+          <!-- <img class="img-fluid" src="https://images.unsplash.com/photo-1541261095067-cc0229c9ba68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="Monster Image 08"> -->
+          <h5 class="pt-2">Timber</h5>
+        </section>
+  
+        <section class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="img-container" style="background: url('https://images.unsplash.com/photo-1509587643525-b2cf3233c20b?ixlib=rb-1.2.1&auto=format&fit=crop&w=2110&q=80') no-repeat center center/cover; width: 100%; height: 400px;"></div>
+          <!-- <img class="img-fluid" src="https://images.unsplash.com/photo-1509587643525-b2cf3233c20b?ixlib=rb-1.2.1&auto=format&fit=crop&w=2110&q=80" alt="Monster Image 09"> -->
+          <h5 class="pt-2">Skedaddle</h5>
+        </section>
+  
+        <section class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="img-container" style="background: url('https://images.unsplash.com/photo-1519741347686-c1e0aadf4611?ixlib=rb-1.2.1&auto=format&fit=crop&w=1980&q=80') no-repeat center center/cover; width: 100%; height: 400px;"></div>
+          <!-- <img class="img-fluid" src="https://images.unsplash.com/photo-1519741347686-c1e0aadf4611?ixlib=rb-1.2.1&auto=format&fit=crop&w=1980&q=80" alt="Monster Image 10"> -->
+          <h5 class="pt-2">Smiley</h5>
+        </section>
+  
+        <section class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="img-container" style="background: url('https://images.unsplash.com/photo-1533343780287-4d901237e589?ixlib=rb-1.2.1&auto=format&fit=crop&w=1275&q=80') no-repeat center center/cover; width: 100%; height: 400px;"></div>
+          <!-- <img class="img-fluid" src="https://images.unsplash.com/photo-1533343780287-4d901237e589?ixlib=rb-1.2.1&auto=format&fit=crop&w=1275&q=80" alt="Monster Image 11"> -->
+          <h5 class="pt-2">Frex</h5>
+        </section>
+  
+        <section class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="img-container" style="background: url('https://images.unsplash.com/photo-1489533870080-06eae0c8dae1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover; width: 100%; height: 400px;"></div>
+          <!-- <img class="img-fluid" src="https://images.unsplash.com/photo-1489533870080-06eae0c8dae1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="Monster Image 12"> -->
+          <h5 class="pt-2">Drift</h5>
+        </section>
+      </div>
+
+    </section>
+  </article>
+
+
+<article id="page-media" class="container page-section py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-xl-6">
+      <section class="layout-media">
+        <header class="page-section-header text-center">
+          <h2 class="page-section-title">Media</h2>
+          <p class="page-section-text">A quick way to create a two-column pattern that shows an image next to a photo. In Bootstrap 4, you gain the ability
+            to center elements using flexbox classes. A couple of things to watch out for is that these will always render as
+            single columns and can sometimes be too wide.</p>
+        </header>
+        <section class="media my-2 align-items-center">
+          <img class="layout-image align-self-end mr-3" src="https://dancetransition.files.wordpress.com/2015/07/amandaclark_nov2014_023-edit.jpg" alt="Media Image 01">
+          <div class="media-body p-3">
+            <h4 class="layout-title">Yodelay Hee Hoo!</h4>
+            <p class="layout-text">Yodel grew up in a family of singers and loud talkers and could never get a word in edgewise. Then his vast talent
+              for yodeling emerged. Now he performs to adoring fans throughout the world, and always has the loudest voice at
+              the dinner table.</p>
+          </div>
+        </section>
+
+        <section class="media my-2 align-items-center">
+          <img class="layout-image align-self-center mr-3" src="https://iheal.files.wordpress.com/2015/08/istock_000022035710_large.jpg" alt="Media Image 02">
+          <div class="media-body p-3">
+            <h4 class="layout-title">One Monster of a Baker</h4>
+            <p class="layout-text">Filo was named after the wonderful, buttery pastry crust that monsters adore. She's a prominent baker and pastry
+              chef in monster circles and is always exploring and sharing new dessert trends.</p>
+          </div>
+        </section>
+
+        <section class="media my-2 align-items-center">
+          <img class="layout-image align-self-center mr-3" src="https://restorewellness.com.au/wp-content/uploads/2015/01/Dollarphotoclub_74910847-compressor.jpg"
+               alt="Media Image 03">
+          <div class="media-body p-3">
+            <h4 class="layout-title">Don't Worry, Be Happy!</h4>
+            <p class="layout-text">With the bad rap they get from movies, monsters have it pretty tough. Perhaps no monster has done more to squash
+              stereotypes than Smiley, who can take anyone's frown and turn it upside down.</p>
+          </div>
+        </section>
+      </section>
+    </div>
+  </div> 
+
+</article>
+
+
+
+
+
+
+<article id="page-photogrid" class="container page-section my-5">
+
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-xl-6">
+        <header class="page-section-header text-center">
+            <h2 class="page-section-title">Grid</h2>
+            <p class="page-section-text">Another way to quickly prepare a set of responsive images, is to create
+              div containers and set some break-points, in this case all images have max-width: 100%, this only works with same size (height) images 
+              otherwise the grid height will not be even.</p>
+          </header>
+      
+    </div>
+  </div>
+  
+  <section class="layout-photogrid">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3"><img class="layout-image" src="https://image.discountdance.net/image/1395x1860/el100_1.jpg" alt="Monster 01 image"></div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3"><img class="layout-image" src="https://image.discountdance.net/image/1395x1860/lc211_5.jpg" alt="Monster 02 image"></div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3"><img class="layout-image" src="https://image.discountdance.net/image/1395x1860/lc211_3.jpg" alt="Monster 03 image"></div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3"><img class="layout-image" src="https://image.discountdance.net/image/1395x1860/chacott1_7.jpg" alt="Monster 04 image"></div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3"><img class="layout-image" src="https://image.discountdance.net/image/1395x1860/chacott1_3.jpg" alt="Monster 05 image"></div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3"><img class="layout-image" src="https://image.discountdance.net/image/1395x1860/n5835_4.jpg" alt="Monster 06 image"></div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3"><img class="layout-image" src="https://image.discountdance.net/image/1395x1860/n9112_4.jpg" alt="Monster 07 image"></div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3"><img class="layout-image" src="https://image.discountdance.net/image/1395x1860/n9112_6.jpg" alt="Monster 08 image"></div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3"><img class="layout-image" src="https://image.discountdance.net/image/1395x1860/chacott1_4.jpg" alt="Monster 09 image"></div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3"><img class="layout-image" src="https://image.discountdance.net/image/1395x1860/chacott1_5.jpg" alt="Monster 10 image"></div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3"><img class="layout-image" src="https://image.discountdance.net/image/1395x1860/chacott1_2.jpg" alt="Monster 11 image"></div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3"><img class="layout-image" src="https://image.discountdance.net/image/1395x1860/th5109_1.jpg" alt="Monster 12 image"></div>
+  </div>
+  </section>
+
+</article>
+
+
+
+<header class="page-section-header text-center container">
+<div class="row justify-content-center">
+  <div class="col-lg-8 col-xl-6">
+      <h2 class="page-section-title">Carousel</h2>
+      <p class="page-section-text">One of the very famous and easily distinguishable elements of Bootsrap is the carousel. Placed normally in the fixed-top
+        section header of the page, where users can slide through images to find out about the newest things.</p>
+        
+      </div>
+    </div>
+  </header>
     
+  
+  
+  <article id="page-carousel" class="page-section">
+
+
+<section id="layout-carousel" class="layout-carousel carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+
+<ol class="carousel-indicators">
+<li data-target="#layout-carousel" data-slide-to="0" class="active"></li>
+<li data-target="#layout-carousel" data-slide-to="1" ></li>
+<li data-target="#layout-carousel" data-slide-to="2" ></li>
+
+</ol>
+
+
+      <section class="carousel-item active"><img class=" d-block layout-image w-100" src="https://images.pexels.com/photos/1820144/pexels-photo-1820144.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Carousel Image 01"></section>
+      <section class="carousel-item"><img class="d-block layout-image w-100" src="https://images.pexels.com/photos/206274/pexels-photo-206274.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Carousel Image 02"></section>
+      <section class="carousel-item"><img class="d-block layout-image w-100" src="https://images.pexels.com/photos/1398625/pexels-photo-1398625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Carousel Image 03"></section>
+    </div>
     
+    <a class="carousel-control-prev" href="#layout-carousel" role="button" data-slide="prev"><span class="carousel-control-prev-icon"><span class="sr-only">Previous</span></a>
+    <a class="carousel-control-next" href="#layout-carousel" role="button" data-slide="next"><span class="carousel-control-next-icon"><span class="sr-only">Next</span></a>
+    
+  </section>
+
+
+</article>
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<footer class="site footer bg-dark d-flex justify-content-center fixed-bottom py-4">
+<footer class="site footer bg-dark d-flex justify-content-center py-4">
 
 <section class="layout-social">
   <a class="text-light px-2" href="#"><i class="layout-icon fab fa-instagram"></i></a>
