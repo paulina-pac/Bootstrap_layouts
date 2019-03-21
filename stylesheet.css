@@ -60,6 +60,7 @@ body {
   }
 
 
+ 
 
 /* 
 .layout-social .layout-icon {
@@ -113,3 +114,38 @@ body {
 /* #layout-carousel .layout-image {
   max-width: 100%
 } */
+
+
+.icon {
+
+  display: inline-block;
+  font-size: inherit;
+  overflow: visible;
+  text-rendering: auto;
+  fill: deeppink !important;
+  width:50px;
+  height:50px;
+}
+
+.layout-floater .layout-image {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+#page-floater {
+  margin: 100px 0 100px 0;
+}
+
+.layout-floater .layout-container {
+  position: relative;
+} 
+
+.layout-floater .layout-image {
+
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(5deg) scale(0.9);
+
+}
+}
