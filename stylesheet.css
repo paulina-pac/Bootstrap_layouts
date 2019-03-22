@@ -2,6 +2,15 @@ body {
   font-family: "Karla", sans-serif;
 }
 
+.img-car {
+  width: auto;
+  height: 70vh;
+  max-height:900px;
+  object-fit:cover;
+  object-position:center;
+  }
+
+
 .site-header {
   background: linear-gradient(180deg, rgb(17, 17, 17) 0%, rgba(0, 0, 0, 0) 100%),
     url("https://images.unsplash.com/photo-1516737488405-7b6d6868fad3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
@@ -26,7 +35,7 @@ body {
 
 .site-header .page-section-title {
   font-size: 3rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   color: burlywood;
 }
@@ -47,20 +56,16 @@ body {
   }
 }
 
-
 .page-section-title {
   font-size: 3rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: burlywood;
 }
 
-  .page-section-text {
-    font-size: 1.2em;
-  }
-
-
- 
+.page-section-text {
+  font-size: 1.2em;
+}
 
 /* 
 .layout-social .layout-icon {
@@ -95,7 +100,6 @@ body {
   height: 366px;
 }
 
-
 .layout-media .layout-image {
   max-width: 200px;
 }
@@ -105,26 +109,22 @@ body {
   font-weight: 700;
 }
 
-
 .layout-photogrid .layout-image {
- max-width: 100%; 
-
+  max-width: 100%;
 }
 
 /* #layout-carousel .layout-image {
   max-width: 100%
 } */
 
-
 .icon {
-
   display: inline-block;
   font-size: inherit;
   overflow: visible;
   text-rendering: auto;
   fill: deeppink !important;
-  width:50px;
-  height:50px;
+  width: 50px;
+  height: 50px;
 }
 
 .layout-floater .layout-image {
@@ -132,20 +132,18 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-#page-floater {
-  margin: 100px 0 100px 0;
-}
+  #page-floater {
+    margin: 100px 0 100px 0;
+  }
 
-.layout-floater .layout-container {
-  position: relative;
-} 
+  .layout-floater .layout-container {
+    position: relative;
+  }
 
-.layout-floater .layout-image {
-
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(5deg) scale(0.9);
-
-}
+  .layout-floater .layout-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(5deg) scale(0.7);
+  }
 }
