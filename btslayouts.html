@@ -27,7 +27,8 @@
         <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:300,400,600" rel="stylesheet">
 </head>
 
-<body class="bg-light">
+
+<body data-spy="scroll" data-target=".site-nav" data-offset="55" class="bg-light">
   <header id="page-hero" class="site-header mb-4">
     <nav class="site-nav navbar navbar-expand-sm bg-light navbar-light fixed-top">
       <div
@@ -69,7 +70,7 @@
     <section class="layout-hero d-flex text-center align-items-center">
       <div class="container p-3 text-white">
         <div class="row justify-content-center">
-          <div class="col-7">
+          <div class="col-7 fademein">
             <h3 class="page-section-title"> Bootstrap 4 Layouts</h3>
             <p class="page-section-text"> The layout I'm creating at the moment will use multiple columns rules, which are simple,
               the amount of columns each group will take will depend of the width of your browser it will
@@ -175,7 +176,7 @@
 
 <article id="page-media" class="container page-section py-5">
   <div class="row justify-content-center">
-    <div class="col-lg-8 col-xl-6">
+    <div class="col-lg-8 col-xl-6 layout-animation invisible">
       <section class="layout-media">
         <header class="page-section-header text-center">
           <h2 class="page-section-title">Media</h2>
@@ -298,6 +299,7 @@
 </article>
 
 
+<article id="page-nested" class="page-section">
 <header class="page-section-header text-center container">
   <div class="row justify-content-center">
     <div class="col-lg-8 col-xl-6">
@@ -309,7 +311,6 @@
   </div>
 </header>
 
-<article id="page-nested" class="page-section">
 
   <div class="layout-nested container py-5">
 
@@ -345,6 +346,7 @@
 </article>
 
 
+<article id="page-icons" class="page-section mb-5">
 
 <header class="page-section-header text-center container">
     <div class="row justify-content-center">
@@ -357,7 +359,6 @@
   </header>
 
 
-  <article id="page-icons" class="page-section mb-5">
   
     <section class="layout-icon-columns container">
       <div class="row text-center justify-content-center">
@@ -386,7 +387,8 @@
   
   </article>
 
-
+  
+  <article id="page-floater" class="page-section">
   <header class="page-section-header text-center container">
       <div class="row justify-content-center">
         <div class="col-lg-8 col-xl-6">
@@ -398,7 +400,6 @@
     </header>
 
 
-  <article id="page-floater" class="page-section">
   
     <section class="layout-floater container py-5">
       <div class="row align-items-center justify-content-center">
@@ -514,9 +515,7 @@
     <!-- !------------------------------------------- SCRIPTS ------------------------------------------ -->
 
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
     ></script>
 
     <script

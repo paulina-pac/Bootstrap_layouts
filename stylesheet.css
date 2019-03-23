@@ -2,14 +2,34 @@ body {
   font-family: "Karla", sans-serif;
 }
 
+@keyframes fademein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+
+
+.fademein {
+  opacity: 0;
+  animation-name: fademein;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  visibility: visible !important ;
+}
+
+
 .img-car {
   width: auto;
   height: 70vh;
-  max-height:900px;
-  object-fit:cover;
-  object-position:center;
-  }
-
+  max-height: 900px;
+  object-fit: cover;
+  object-position: center;
+}
 
 .site-header {
   background: linear-gradient(180deg, rgb(17, 17, 17) 0%, rgba(0, 0, 0, 0) 100%),
@@ -50,6 +70,36 @@ body {
   font-size: 1.2em;
 }
 
+.site-header .nav-link {
+
+  position: relative;
+  padding-bottom: 0;
+  margin-bottom: 2px;
+
+}
+
+.site-header .nav-link:before {
+  content:'';
+  position: absolute;
+  width: 100%;
+  max-width: 100px;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: burlywood;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-out;
+}
+
+.site-header .nav-link:hover:before {
+  visibility: visible;
+  left: 0px;
+  transform: scaleX(1);
+}
+
+
+
 @media (min-width: 1376px) {
   .container {
     max-width: 2200px;
@@ -67,31 +117,16 @@ body {
   font-size: 1.2em;
 }
 
-/* 
-.layout-social .layout-icon {
-  font-size: 1.5em; 
+.layout-multicolumn .img-container {
+  transition: all 0.3s ease-out;
 }
 
-
-
-.layout-multicolumn img {
-
-  position: relative;
-  max-width: 400px;
-  max-height: 200px;
-} */
-
-/* .layout-multicolumn section {
-  position: relative;
-  display: flex;
-  height:300px;
-  overflow: hidden;
-  text-align: center; */
-
-/* .img-container {
-  justify-self: center;
-  width: 400px;
-}  */
+.layout-multicolumn .img-container:hover {
+  transform: scale(1.03) translate(-3px);
+  -webkit-box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.75);
+}
 
 .img-fluid {
   width: 100%;
