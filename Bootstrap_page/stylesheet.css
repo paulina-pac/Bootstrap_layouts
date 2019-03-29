@@ -1,14 +1,14 @@
-@media (min-width: 1600px) {
+/* @media (min-width: 1600px) {
   .container {
     max-width: 1500px;
   }
-}
+} */
 
-@media (min-width: 1900px) {
+/* @media (min-width: 1900px) {
   .container {
     max-width: 1800px;
   }
-}
+} */
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -57,7 +57,7 @@ body {
   margin-left: 2rem;
   font-family: "Playfair Display SC", serif;
   font-size: 1.5em;
-  color: rosybrown !important;
+  color: #373737 !important;
 }
 
 
@@ -140,9 +140,6 @@ body {
   border-width: 3px;
   background-color: #a8f9ff !important;
 
-  -webkit-box-shadow: inset -1px 0px 14px -4px rgba(0,0,0,0.38);
--moz-box-shadow: inset -1px 0px 14px -4px rgba(0,0,0,0.38);
-box-shadow: inset -1px 0px 14px -4px rgba(0,0,0,0.38);
 }
 
 /* #fa7268-#a8f9ff-#373737-#efefef-#bc8f8f */
@@ -151,27 +148,112 @@ box-shadow: inset -1px 0px 14px -4px rgba(0,0,0,0.38);
 /* !---------------------------------------------------- ABOUT US ---------------------------------------------------------------- */
 
 
-.section_discover__img::before {
+.header-img {
+max-width:100%;
+object-fit: cover;
+object-position: center;
+  /* -webkit-box-shadow: 9px 9px 11px -4px rgba(214,214,214,1);
+-moz-box-shadow: 9px 9px 11px -4px rgba(214,214,214,1);
+box-shadow: 9px 9px 11px -4px rgba(214,214,214,1); */
 
-  top: 5%;
-  left: 20%;
-  border: 1px solid #a8f9ff;
-
-}
-.section_discover__img::after,
-.section_discover__img::before {
-  position: absolute;
-  z-index: -1;
-  width: 80%;
-  height: 100%;
-  content: "";
+-webkit-box-shadow: 9px 9px 0px -4px rgba(168,249,255,1);
+-moz-box-shadow: 9px 9px 0px -4px rgba(168,249,255,1);
+box-shadow: 9px 9px 0px -4px rgba(168,249,255,1);
 }
 
-*, ::after, ::before {
 
-  box-sizing: border-box;
+
+.p-text {
+  font-family: "Open Sans",sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+  text-align: left;
+  color: #777;
+  }
+  
+  .p-text {
+    font-family: "Open Sans",sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.7;
+    text-align: left;
+    color: -#373737;
+    }
+  
+  .headline-text {
+  
+    font-size: 1.75rem;
+    font-family: "Playfair Display",serif;
+  font-weight: 400;
+  line-height: 1.42857;
+  margin-bottom: .5rem;
+  color: #373737;
+  }
+  
+  
+  
+  .opis {
+  
+    font-size: 1.4rem;
+    font-family: "Playfair Display",serif;
+  font-weight: 400;
+  line-height: 1.42857;
+  margin-bottom: .5rem;
+  color: #373737;
+  
+  }
+  
+  hr {
+    background-color: #a8f9ff;
+    height: 0.75px;
+  }
+
+
+/* !---------------------------------------------------- POKOJE ---------------------------------------------------------------- */
+
+
+
+.header-main {
+  
+  font-size: 3rem;
+  font-family: "Playfair Display",serif;
+font-weight: 400;
+line-height: 1.42857;
+margin-bottom: .5rem;
+color: #373737;
+}
+
+
+
+#pokoje {
+  margin-top: 7rem;
+}
+
+
+thead {
+  text-transform: uppercase;
 
 }
+
+.img-pokoje {
+  /* -webkit-box-shadow: -9px -9px 0px -4px rgba(188,143,143,0.5);
+  -moz-box-shadow: -9px -9px 0px -4px rgba(188,143,143,0.5);
+  box-shadow: -9px -9px 0px -4px rgba(188,143,143,0.5); */
+  
+  -webkit-box-shadow: -10px 10px 0px -4px rgba(168,249,255,1);
+-moz-box-shadow: -10px 10px 0px -4px rgba(168,249,255,1);
+box-shadow: -10px 10px 0px -4px rgba(168,249,255,1);
+}
+
+.table thead th {
+  border-color:#a8f9ff;
+}
+
+
+
+
+
 
 /* !---------------------------------------------------- FOOTER ---------------------------------------------------------------- */
 
@@ -211,35 +293,3 @@ color:#fa7268;
 }
 /* Optional: Makes the sample page fill the window. */
 
-
-.p-text {
-font-family: "Open Sans",sans-serif;
-font-size: 1rem;
-font-weight: 300;
-line-height: 1.7;
-text-align: left;
-color: #777;
-}
-
-.p-text {
-  font-family: "Open Sans",sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.7;
-  text-align: left;
-  color: -#373737;
-  }
-
-.headline-text {
-
-  font-size: 1.75rem;
-  font-family: Playfair Display,serif;
-font-weight: 400;
-line-height: 1.42857;
-margin-bottom: .5rem;
-color: #373737;
-}
-
-.img-row {
-  max-height: 600px;
-}
